@@ -1,0 +1,432 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-padding{
+    padding: 90px 0;
+}
+
+.Bg-grey{
+    background-color: #f7f7f7;
+}
+
+ul{
+    list-style: none;
+}
+
+.navbar-links{
+    color: aqua !important;
+}
+
+.navbar{
+    position: fixed;
+    transition: all 0.5s;
+    z-index: 9999999;
+}
+
+.nav-scrolled{
+    background-color: black;
+}
+.navbar-icons ul .nav-links{
+    transition: color 0.4s;
+}
+
+.navbar-icons ul .nav-links:hover{
+    color: #CCCCCC !important;
+}
+
+.logo img{
+    max-height: 40px;
+}
+
+/* home start */
+
+.carousel-caption h1{
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.home-arrow{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: solid 1px #fff;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.home-arrow:hover .arrow-layer{
+    right: 0;
+}
+
+.home-arrow:hover i{
+    color: black;
+}
+
+.home-arrow i{
+    position: absolute;
+    z-index: 9;
+    transition: 0.4s;
+}
+
+.arrow-next{
+    position: absolute;
+    left: 0;
+    top: calc(50% + 50px);
+}
+
+.arrow-layer{
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+    transition: 0.4s;
+}
+
+.carousel-caption h4{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.carousel-layer{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.buttons .btn{
+    height: 50px;
+}
+
+/* home end */
+
+/* about start */
+
+.about p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #787878;
+}
+
+.about h6{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.about span{
+    color: #00c3da !important;
+}
+
+/* about end */
+
+/* team start */
+
+.team-cap h2::before {
+    content: 'C';
+    font-size: 65px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f3f3f3;
+    z-index: -1;
+}
+
+.team-cap h2{
+    position: relative;
+    z-index: 2;
+    font-size: 40px;
+    font-weight: 750;
+}
+
+.team-layer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    opacity: 0;
+    background-color: rgba(0, 195, 218, 0.9);
+    transition: 0.3s ease;
+}
+
+.team-img:hover .team-layer {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.team-layer .team-info h4{
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.team-info ul li{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.info-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.info-text span{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.team-cap h4{
+    font-weight: 400;
+    font-size: 17px;
+    color: #787878;
+}
+
+.fadeUp1{
+    animation-name: fadeInUp;
+}
+.fadeUp2{
+    animation-name: fadeInUp;
+    animation-timing-function: 1.5s;
+    animation-delay: 0.2s;
+}
+.fadeUp3{
+    animation-name: fadeInUp;
+    animation-delay: 0.4s;
+}
+.fadeUp4{
+    animation-name: fadeInUp;
+    animation-delay: 0.6s;
+}
+
+/* teams end */
+
+/* services start */
+
+.services{
+    background-color: #626262;
+}
+
+.box-caption h4{
+    font-size: 13px;
+    color: #fff;
+}
+
+.title h2{
+    position: relative;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.services .title h2::before {
+    content: 'W';
+    font-size: 70px;
+    font-weight: 900;
+    position: absolute;
+    left: -2%;
+    bottom: -12%;
+    color: #787878;
+    z-index: -1;
+}
+
+/* services end */
+
+/* pricing start */
+
+.pricing-card {
+    border: 1px solid #f3f3f3;
+    max-width: 400px;
+    padding: 30px 25px;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+    transition: 0.4s;
+}
+
+.pricing-card:hover{
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-info .pricing-header h4 {
+    font-size: 13px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.pricing-info .price h2 {
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: -3px;
+    margin: 0;
+}
+
+.pricing-info .price h2 span {
+    font-size: 18px;
+    font-weight: 400;
+    vertical-align: top;
+}
+
+.pricing-info ul li{
+    color: #787878;
+}
+
+.pricing-info .best-price h2{
+    color: #00c3da;
+}
+
+.pricing-info .best-price h2 span{
+    color: #00c3da;
+}
+
+/* pricing end */
+
+/* testimonial start */
+
+.carousel-inner h6{
+    font-size: 13px;
+    transform: translateY(30px);
+}
+
+.testimonial .carousel-item img{
+    border-radius: 50%;
+    width: 100px;
+    transform: translateY(50%);
+}
+
+.testimonial .carousel-item .testimonial-caption{
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+}
+
+.testimonial .carousel-item .testimonial-caption h3{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.testimonial .carousel-indicators button{
+    transform: translateY(50px);
+    height: 12px;
+    width: 12px;
+}
+
+.testimonial .testimonial-arrow{
+    transform: translateX(80px);
+}
+
+.testimonial .carousel-control-prev{
+    transform: translateX(-80px);
+}
+
+.testimonial .testimonial-arrow i{
+    transition: transform 0.5s;
+}
+
+.testimonial .testimonial-arrow:hover i{
+    color: #00c3da !important;
+    transform: translateX(25%);
+}
+
+.testimonial .testimonial-arrow:hover .fa-arrow-left{
+    color: #00c3da !important;
+    transform: translateX(-25%);
+}
+
+.testimonial-arrow{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+/* testimonial end */
+
+/* contact start */
+
+.contact .team-cap h2::before{
+    font-size: 75px;
+    content: 'G';
+    left: 5%;
+    top: -75%;
+}
+
+.form-section textarea{
+    min-height: 110px;
+}
+
+.form-section label {
+    font-size: 13px;
+}
+
+.form-section button {
+    padding: 12px 30px !important;
+    font-size: 15px;
+}
+
+/* contact end */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h1{
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .txt-sm-center{
+        text-align: center;
+    }
+    .services .title h2{
+        justify-content: center;
+    }
+    .services .title h2::before{
+        left: 40%;
+    }
+    .testimonial .arrows button{
+        display: none;
+    }
+    .map-frame iframe{
+        height: 500px !important;
+    }
+    
+}
+
+@media (min-width: 768px){
+    .best-price-card{
+        transform: scale(1.08);
+    }
+    .testimonial .carousel-item .testimonial-caption{
+        padding: 90px !important;
+    }
+}
